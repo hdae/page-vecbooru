@@ -65,7 +65,7 @@ export const SearchPage = ({ initialQuery = "", onQueryChange }: SearchPageProps
                             <Flex direction="column" gap="4" align="center">
                                 <Heading size="4">検索エンジンの初期化</Heading>
                                 <Text align="center" color="yellow">
-                                    注意: 約250MBのモデルとインデックスデータをダウンロードします。
+                                    注意: 180MB程度のダウンロードが発生します。
                                 </Text>
                                 <Button size="3" onClick={() => setShouldLoad(true)}>
                                     エンジンを読み込む

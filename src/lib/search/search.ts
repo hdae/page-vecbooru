@@ -5,7 +5,7 @@ import { MetadataSchema } from "./schema";
 type DB = Database<typeof MetadataSchema>;
 
 const CACHE_NAME = "vecbooru-db-v1";
-const DB_URL = "/index.bin";
+const DB_URL = "/page-vecbooru/index.bin";
 
 // Singleton promise pattern - cleaner than mutable state
 let initPromise: Promise<DB> | null = null;
