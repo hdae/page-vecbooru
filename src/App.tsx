@@ -4,7 +4,10 @@ import { indexRoute } from "./routes/index";
 
 const routeTree = rootRoute.addChildren([indexRoute]);
 
-const router = createRouter({ routeTree });
+const router = createRouter({
+    basepath: '/page-vecbooru',
+    routeTree
+});
 
 declare module "@tanstack/react-router" {
     interface Register {
